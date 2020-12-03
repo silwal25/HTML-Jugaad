@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stylecss.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <header>
+                <h1> <a href="website.html">HTMLJUGAAD</a><span style="color:green">.com</span></h1>
+            </header>
+        </div>
+
+        <div class = "topnav" id="topnav">
+                <ul style="list-style-type: none">
+                    <li style="float:left;" class="active"><a href="/mnt/868E18008E17E807/studio-code/website/home.html">HOME</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/html/html.html">HTML</a></li>
+                    <li style="float:left"><a href="css.html">CSS</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/js/javascript.html">JAVA SCRIPT</a></li>
+                    <li style="float:left"><a href="extra.html">EXTRAS</a></li>
+                    <li style="float:left"><a href="aboutus.html">ABOUT US</a></li>
+                    <li style="float:right"><a href="signin.html">Sign In</a></li>
+                    <li style="float:right"><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+
+        <div class = "sidenav">
+            <ul>
+                <li><a href="css.html">CSS Home</a></li>
+                <li><a href="introduction.html">CSS Introduction</a></li>
+                <li><a href="syntax.html" class="active">CSS Syntax</a></li>
+                <li><a href="howto.html">CSS How To</a></li>
+                <li><a href="error.html">CSS Colors</a></li>
+                <li><a href="error.html">CSS Backgrounds</a></li>
+                <li><a href="error.html">CSS Borders</a></li>
+                <li><a href="error.html">CSS Margins</a></li>
+                <li><a href="error.html">CSS Padding</a></li>
+                <li><a href="error.html">CSS Height/Width</a></li>
+                <li><a href="error.html">CSS Box Model</a></li>
+                <li><a href="error.html">CSS Outline</a></li>
+                <li><a href="error.html">CSS Text</a></li>
+                <li><a href="error.html">CSS Fonts</a></li>
+                <li><a href="error.html">CSS Icons</a></li>
+                <li><a href="error.html">CSS Links</a></li>
+                <li><a href="error.html">CSS Lists</a></li>
+                <li><a href="error.html">CSS Tables</a></li>
+                <li><a href="error.html">CSS Display</a></li>
+                <li><a href="error.html">CSS Max-Width</a></li>
+                <li><a href="error.html">CSS Position</a></li>
+                <li><a href="error.html">CSS Overflow</a></li>
+                <li><a href="error.html">CSS Float</a></li>
+                <li><a href="error.html">CSS Inline Block</a></li>
+                <li><a href="error.html">CSS Align</a></li>
+                <li><a href="error.html">CSS Combinators</a></li>
+                <li><a href="error.html">CSS Pseudo-Class</a></li>
+                <li><a href="error.html">CSS Pseudo-Elements</a></li>
+                <li><a href="error.html">CSS Opacity</a></li>
+                <li><a href="error.html">CSS Navigation Bar</a></li>
+                <li><a href="error.html">CSS Dropdown</a></li>
+                <li><a href="error.html">CSS Image Gallery</a></li>
+                <li><a href="error.html">CSS Image Sprites</a></li>
+                <li><a href="error.html">CSS Attr Selectors</a></li>
+                <li><a href="error.html">CSS Forms</a></li>
+                <li><a href="error.html">CSS Counters</a></li>
+                <li><a href="error.html">CSS Website Layout</a></li>
+                <li><a href="error.html">CSS Unit</a></li>
+                <li><a href="error.html">CSS Specificity</a></li>
+            </ul>
+            
+        </div>
+
+        <div class = "maincontent">
+            <h1>CSS Syntax and Selectors</h1>
+            <hr>
+            <p>
+                <h2>CSS Syntax</h2>
+                A CSS rule-set consists of a selector and a declaration block: <br><br>
+                <img src="syntax.png" alt="CSS Syntax"><br><br>
+                The selector points to the HTML element you want to style.<br><br>
+                The declaration block contains one or more declarations separated by semicolons.<br><br>
+                Each declaration includes a CSS property name and a value, separated by a colon.<br><br>
+                A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.<br><br>
+                In the following example all &lt;p&gt; elements will be center-aligned, with a red text color:<br><br>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        p { <br>
+                            color: red;<br>
+                            text-align: center;<br>
+                          }<br>
+                    </div>
+            </div>
+            <hr>
+        <p>
+            <h2>CSS Selectors</h2>
+            CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+        </p>
+        <hr>
+        <p>
+            <h2>The Element Selector</h2>
+            The element selector selects elements based on the element name. <br><br>
+            You can select all &lt;p&gt; elements on a page like this (in this case, all &lt;p&gt; elements will be center-aligned, with a red text color):
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        p { <br>
+                            color: red;<br>
+                            text-align: center;<br>
+                          }<br>
+                    </div>
+            </div>
+        </p>
+        <hr>
+        <p>
+            <h2>The ID Selector</h2>
+            The id selector uses the id attribute of an HTML element to select a specific element. <br><br>
+            The id of an element should be unique within a page, so the id selector is used to select one unique element!<br><br>
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br><br>
+            The style rule below will be applied to the HTML element with id="para1":<br><br>
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            #para1 { <br>
+                                text-align: center;<br>
+                                color: red;<br>
+                              }<br>
+                              
+                    </div>
+            </div>
+            <div class="container">
+                    Note: An id name cannot start with a number!
+            </div>
+            <h2>The Class Selector</h2>
+            The class selector selects elements with a specific class attribute.<br><br>
+            To select elements with a specific class, write a period (.) character, followed by the name of the class.<br><br>
+            In the example below, all HTML elements with class="center" will be red and center-aligned:<br><br>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="innerex">
+                    .center { <br>
+                        text-align: center;<br>
+                        color: red;<br>
+                      }    <br>
+                </div>
+            </div>
+            You can also specify that only specific HTML elements should be affected by a class. <br><br>
+            In the example below, only <p> elements with class="center" will be center-aligned:<br><br>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                p.center { <br>
+                                    text-align: center;<br>
+                                    color: red;<br>
+                                  }<br>
+                        </div>
+                </div>
+            HTML elements can also refer to more than one class. <br><br>
+            In the example below, the &lt;p&gt; element will be styled according to class="center" and to class="large":<br><br>
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            <p class="center large">This paragraph refers to two classes.</p>
+                    </div>
+            </div>
+            <div class="container">
+                    Note: An id name cannot start with a number!
+            </div>
+        </p>
+        <hr>
+        <p>
+            <h2>Grouping Selectors</h2>
+            If you have elements with the same style definitions, like this:
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            h1 { <br>
+                                text-align: center;<br>
+                                color: red;<br>
+                              }<br>
+                              <br>
+                              h2 {<br>
+                                text-align: center;<br>
+                                color: red;<br>
+                              }<br>
+                              <br>
+                              p {<br>
+                                text-align: center;<br>
+                                color: red;<br>
+                              }<br>
+                    </div>
+            </div>
+            It will be better to group the selectors, to minimize the code. <br><br>
+            To group selectors, separate each selector with a comma.<br><br>
+            In the example below we have grouped the selectors from the code above:<br><br>
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            h1, h2, p { <br>
+                                text-align: center;<br>
+                                color: red; <br>
+                              } <br>
+                    </div>
+            </div>
+        </p>
+        <hr>
+        <p>
+            <h2>CSS Comments</h2>
+            Comments are used to explain the code, and may help when you edit the source code at a later date.
+            Comments are ignored by browsers.
+            A CSS comment starts with /* and ends with */. Comments can also span multiple lines:
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            p { <br>
+                                color: red;<br>
+                                /* This is a single-line comment */<br>
+                                text-align: center;<br>
+                              }<br>
+                              <br>
+                              /* This is<br>
+                              a multi-line<br>
+                              comment */<br>
+                    </div>
+            </div>
+        </p>
+    
+        </div>
+        <div class = "footer">
+
+        </div>
+    </body>
+</html>

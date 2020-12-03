@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>ERROR 404</title>
+        <style>
+            @font-face{
+                font-family: 'adlanta';
+                src:url('Adlanta-Light.otf');
+            }
+            @font-face{
+                font-family: 'adlanta-dark';
+                src:url('Adlanta.otf');
+            }
+            body{
+                background-image: url("error.png");
+                background-position: center;
+                background-size: cover;
+                font-family: 'adlanta-dark';
+            }
+            .error-message{
+                color:white;
+                margin:300;
+                margin-left: 580;
+                height:10%;
+                width:42%;
+            }
+            .error-message h1{
+                text-align: left;
+                font-size: 36;
+                color: yellow;
+            }
+            .error-message{
+                text-align: left;
+            }
+            button{
+                border-radius: 6px;
+                font-size: 20;
+                padding-top: 5;
+                padding-bottom: 5;
+                padding-left: 20;
+                padding-right: 20;
+                background-color: #2473f2;
+                border: none;
+                transition-duration: 0.5s;
+            }
+            button:hover{
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="error-message">
+            <h1>Ohh... Snap.!</h1>
+            <p>
+                The page you requested cannot be found, please return to the home page and try something else.
+            </p>
+            <button onclick="location.href='home.html'">Go Home</button>
+        </div>
+    </body>
+</html>

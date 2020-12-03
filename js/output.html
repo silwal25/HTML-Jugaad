@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stylejs.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <header>
+                <h1> <a href="website.html">HTMLJUGAAD</a><span style="color:green">.com</span></h1>
+            </header>
+        </div>
+
+        <div class = "topnav" id="topnav">
+                <ul style="list-style-type: none">
+                    <li style="float:left;" class="active"><a href="/mnt/868E18008E17E807/studio-code/website/home.html">HOME</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/html/html.html">HTML</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/css/css.html">CSS</a></li>
+                    <li style="float:left"><a href="javascript.html">JAVA SCRIPT</a></li>
+                    <li style="float:left"><a href="error.html">EXTRAS</a></li>
+                    <li style="float:left"><a href="error.html">ABOUT US</a></li>
+                    <li style="float:right"><a href="error.html">Sign In</a></li>
+                    <li style="float:right"><a href="error.html">Register</a></li>
+                </ul>
+            </div>
+
+        <div class = "sidenav">
+            <ul>
+                <li><a href="javascript.html">JS Home</a></li>
+                <li><a href="intro.html">JS Introduction</a></li>
+                <li><a href="whereto.html">JS Where To</a></li>
+                <li><a href="output.html" class="active">JS Output</a></li>
+                <li><a href="error.html">JS Statements</a></li>
+                <li><a href="error.html">JS Syntax</a></li>
+                <li><a href="error.html">JS Comments</a></li>
+                <li><a href="error.html">JS Variables</a></li>
+                <li><a href="error.html">JS Operators</a></li>
+                <li><a href="error.html">JS Arithmatic</a></li>
+                <li><a href="error.html">JS Assignment</a></li>
+                <li><a href="error.html">JS DataTypes</a></li>
+                <li><a href="error.html">JS Functions</a></li>
+                <li><a href="error.html">JS Objects</a></li>
+                <li><a href="error.html">JS Events</a></li>
+                <li><a href="error.html">JS Strings</a></li>
+                <li><a href="error.html">JS String Method</a></li>
+                <li><a href="error.html">JS Numbers</a></li>
+                <li><a href="error.html">JS Number Methods</a></li>
+                <li><a href="error.html">JS Arrays</a></li>
+                <li><a href="error.html">JS Array Methods</a></li>
+                <li><a href="error.html">JS Array Sort</a></li>
+                <li><a href="error.html">JS Array Iteration</a></li>
+                <li><a href="error.html">JS Dates</a></li>
+                <li><a href="error.html">JS Date Format</a></li>
+                <li><a href="error.html">JS Date Get Methods</a></li>
+                <li><a href="error.html">JS Date Set Methods</a></li>
+                <li><a href="error.html">JS Math</a></li>
+                <li><a href="error.html">JS Random</a></li>
+                <li><a href="error.html">JS Boolean</a></li>
+                <li><a href="error.html">JS Comparisions</a></li>
+                <li><a href="error.html">JS Conditions</a></li>
+                <li><a href="error.html">JS Switch</a></li>
+                <li><a href="error.html">JS For Loop</a></li>
+                <li><a href="error.html">JS While Loop</a></li>
+                <li><a href="error.html">JS Break</a></li>
+                <li><a href="error.html">JS Type Conversion</a></li>
+                <li><a href="error.html">JS Bitwise</a></li>
+                <li><a href="error.html">JS Errors</a></li>
+                <li><a href="error.html">JS Scope</a></li>
+                <li><a href="error.html">JS This Keyword</a></li>
+                <li><a href="error.html">JS Const</a></li>
+                <li><a href="error.html">JS Debugging</a></li>
+                <li><a href="error.html">JS Style Guide</a></li>
+                <li><a href="error.html">JS Best Practices</a></li>
+                <li><a href="error.html">JS Mistakes</a></li>
+                <li><a href="error.html">JS Reserved Keywords</a></li>
+            
+        </div>
+
+        <div class = "maincontent">
+            <h1>JavaScript Output</h1>
+            <hr>
+            <p>
+                <h2>JavaScript Display Possibilities</h2>
+                JavaScript can "display" data in different ways:
+                <ul>
+                    <li>Writing into an HTML element, using innerHTML</li>
+                    <li>Writing into the HTML output using document.write().</li>
+                    <li>Writing into an alert box, using window.alert().</li>
+                    <li>Writing into the browser console, using console.log().</li>
+                </ul>
+            </p>
+            <hr>
+            <p>
+                <h2>Using innerHTML</h2>
+                To access an HTML element, JavaScript can use the document.getElementById(id) method. <br><br>
+                The id attribute defines the HTML element. The innerHTML property defines the HTML content: <br>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                <br>
+                                &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+                                &lt;p&gt;My First Paragraph&lt;/p&gt;<br>
+                                <br>
+                                &lt;p id="demo"&gt;&lt;/p&gt;<br>
+                                <br>
+                                &lt;script&gt;<br>
+                                document.getElementById("demo").innerHTML = 5 + 6;<br>
+                                &lt;/script&gt;<br>
+                                <br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                        </div>
+                </div>
+                <div class="container">
+                        Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+                </div>
+            </p>
+            <hr>
+            <p>
+                <h2>Using document.write()</h2>
+                For testing purposes, it is convenient to use document.write(): <br>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                <br>
+                                &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+                                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                                <br>
+                                &lt;script&gt;<br>
+                                document.write(5 + 6);<br>
+                                &lt;/script&gt;<br>
+                                <br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                        </div>
+                </div>
+                <div class="container">
+                    Using document.write() after an HTML document is loaded, will delete all existing HTML:
+                </div>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                <br>
+                                &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+                                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                                <br>
+                                &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;<br>
+                                <br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                        </div>
+                </div>
+                <div class="container">
+                    The document.write() method should only be used for testing.
+                </div>
+            </p>
+            <hr>
+            <p>
+                <h2>Using window.alert()</h2>
+                You can use an alert box to display data: <br>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                <br>
+                                &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+                                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                                <br>
+                                &lt;script&gt;<br>
+                                window.alert(5 + 6);<br>
+                                &lt;/script&gt;<br>
+                                <br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                        </div>
+                </div>
+            </p>
+            <hr>
+            <p>
+                <h2>Using console.log()</h2>
+                For debugging purposes, you can use the console.log() method to display data. <br>
+                <div class="example">
+                        <h3>Example</h3>
+                        <div class="innerex">
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                <br>
+                                &lt;script&gt;<br>
+                                console.log(5 + 6);<br>
+                                &lt;/script&gt;<br>
+                                <br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                        </div>
+                </div>
+            </p>
+        </div>
+
+        <div class = "footer">
+
+        </div>
+    </body>
+</html>

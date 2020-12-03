@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New';
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width:100%;
+    background-color: blue;
+    height: 10%;
+    margin-top: 0;
+
+}
+.header a{
+    color:white;
+    text-decoration-style: none;
+}
+.topnav{
+background-color: cyan;
+margin-top: 0;
+}
+.sidenav{
+    background-color: brown;
+    margin: 0;
+}
+
+.main{
+    background-color:yellowgreen;
+    margin: 0;
+}

@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stylejs.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <header>
+                <h1> <a href="website.html">HTMLJUGAAD</a><span style="color:green">.com</span></h1>
+            </header>
+        </div>
+
+        <div class = "topnav" id="topnav">
+                <ul style="list-style-type: none">
+                    <li style="float:left;" class="active"><a href="/mnt/868E18008E17E807/studio-code/website/home.html">HOME</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/html/html.html">HTML</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/css/css.html">CSS</a></li>
+                    <li style="float:left"><a href="javascript.html">JAVA SCRIPT</a></li>
+                    <li style="float:left"><a href="error.html">EXTRAS</a></li>
+                    <li style="float:left"><a href="error.html">ABOUT US</a></li>
+                    <li style="float:right"><a href="error.html">Sign In</a></li>
+                    <li style="float:right"><a href="error.html">Register</a></li>
+                </ul>
+            </div>
+
+        <div class = "sidenav">
+            <ul>
+                <li><a href="javascript.html">JS Home</a></li>
+                <li><a href="intro.html" class="active">JS Introduction</a></li>
+                <li><a href="whereto.html">JS Where To</a></li>
+                <li><a href="output.html">JS Output</a></li>
+                <li><a href="error.html">JS Statements</a></li>
+                <li><a href="error.html">JS Syntax</a></li>
+                <li><a href="error.html">JS Comments</a></li>
+                <li><a href="error.html">JS Variables</a></li>
+                <li><a href="error.html">JS Operators</a></li>
+                <li><a href="error.html">JS Arithmatic</a></li>
+                <li><a href="error.html">JS Assignment</a></li>
+                <li><a href="error.html">JS DataTypes</a></li>
+                <li><a href="error.html">JS Functions</a></li>
+                <li><a href="error.html">JS Objects</a></li>
+                <li><a href="error.html">JS Events</a></li>
+                <li><a href="error.html">JS Strings</a></li>
+                <li><a href="error.html">JS String Method</a></li>
+                <li><a href="error.html">JS Numbers</a></li>
+                <li><a href="error.html">JS Number Methods</a></li>
+                <li><a href="error.html">JS Arrays</a></li>
+                <li><a href="error.html">JS Array Methods</a></li>
+                <li><a href="error.html">JS Array Sort</a></li>
+                <li><a href="error.html">JS Array Iteration</a></li>
+                <li><a href="error.html">JS Dates</a></li>
+                <li><a href="error.html">JS Date Format</a></li>
+                <li><a href="error.html">JS Date Get Methods</a></li>
+                <li><a href="error.html">JS Date Set Methods</a></li>
+                <li><a href="error.html">JS Math</a></li>
+                <li><a href="error.html">JS Random</a></li>
+                <li><a href="error.html">JS Boolean</a></li>
+                <li><a href="error.html">JS Comparisions</a></li>
+                <li><a href="error.html">JS Conditions</a></li>
+                <li><a href="error.html">JS Switch</a></li>
+                <li><a href="error.html">JS For Loop</a></li>
+                <li><a href="error.html">JS While Loop</a></li>
+                <li><a href="error.html">JS Break</a></li>
+                <li><a href="error.html">JS Type Conversion</a></li>
+                <li><a href="error.html">JS Bitwise</a></li>
+                <li><a href="error.html">JS Errors</a></li>
+                <li><a href="error.html">JS Scope</a></li>
+                <li><a href="error.html">JS This Keyword</a></li>
+                <li><a href="error.html">JS Const</a></li>
+                <li><a href="error.html">JS Debugging</a></li>
+                <li><a href="error.html">JS Style Guide</a></li>
+                <li><a href="error.html">JS Best Practices</a></li>
+                <li><a href="error.html">JS Mistakes</a></li>
+                <li><a href="error.html">JS Reserved Keywords</a></li>
+            </ul>
+            
+        </div>
+
+        <div class = "maincontent">
+            <h1>JavaScript Introduction</h1>
+            <hr>
+            <p>
+                <h2>JavaScript Can Change HTML Content</h2>
+                One of many JavaScript HTML methods is getElementById(). <br><br>
+                This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":<br>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        document.getElementById("demo").innerHTML = "Hello JavaScript";
+                    </div>
+            </div>
+            <div class="container">
+                JavaScript accepts both double and single quotes:
+            </div>
+            <div class="example">
+                <h3>Example</h3>
+                <div class="innerex">
+                    document.getElementById('demo').innerHTML = 'Hello JavaScript';
+                </div>
+            </div>
+            </p>
+            <hr>
+            <p>
+                <h2>JavaScript Can Change HTML Attribute Values</h2>
+                In this example JavaScript changes the value of the src (source) attribute of an <img> tag: <br>
+                <div class="example">
+                    <h3>The Light Bulb</h3>
+                    <div class="innerex">
+                        <p style="text-align:center">
+                            <button onclick="document.getElementById('bulb').src='bulboff.png'">Turn off</button>
+                            <img src="bulboff.png" id="bulb" alt="Bulb" width="100px">
+                            <button onclick="document.getElementById('bulb').src='bulbon.png'">Turn on</button>
+                        </p>
+                    </div>
+            </div>
+            </p>
+            <hr>
+            <p>
+                <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+                Changing the style of an HTML element, is a variant of changing an HTML attribute: <br>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        document.getElementById("demo").style.fontSize = "35px";
+                    </div>
+            </div>
+            </p>
+            <hr>
+            <p>
+                <h2>JavaScript Can Hide HTML Elements</h2>
+                Hiding HTML elements can be done by changing the display style: <br>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        document.getElementById("demo").style.display = "none";
+                    </div>
+            </div>
+            </p>
+            <hr>
+            <p>
+                <h2>JavaScript Can Show HTML Elements</h2>
+                Showing hidden HTML elements can also be done by changing the display style: <br>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                        document.getElementById("demo").style.display = "block";
+                    </div>
+            </div>
+            </p>
+        </div>
+
+        <div class = "footer">
+
+        </div>
+    </body>
+</html>

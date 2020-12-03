@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>HTMLJugaad</title>
+        <style>
+            @font-face{
+                font-family: 'junegull';
+                src:url('junegull.ttf');
+            }
+            @font-face{
+                font-family: 'adlanta';
+                src:url('Adlanta-Light.otf');
+            }
+            @font-face{
+                font-family: 'adlanta-dark';
+                src:url('Adlanta.otf');
+            }
+            @font-face{
+                font-family: 'saru';
+                src:url(saru.TTF);
+            }
+            @keyframes fadein{
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            body{
+                background-color: #424242;
+                background-image: url("cover1.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-blend-mode:multiply;
+                font-family: 'adlanta-dark';
+                padding:0;
+                margin: 0;
+            }
+            .html{
+                background-image: url("html.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment:fixed;
+                opacity:0;
+                transition-duration: 1s;
+                height: 100%;
+                width:100%;
+                
+            }
+
+            .html:hover{
+                opacity: 1;
+            }
+
+            .css{
+                background-image: url("css1.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment:fixed;
+                opacity:0;
+                transition-duration: 1s;
+                height: 100%;
+                width:100%;
+            }
+            .css:hover{
+                opacity: 1;
+            }
+            .js{
+                background-image: url("js.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment:fixed;
+                opacity:0;
+                transition-duration: 1s;
+                height: 100%;
+                width:100%;
+            }
+            .js:hover{
+                opacity: 1;
+            }
+            .header
+            {
+                text-align: center;
+                font-family:'junegull';
+                height:100%;
+                width:100%;
+                
+            }
+            .header h1{
+                padding-top: 10%;
+                font-size:700%; 
+            }
+            .header h4{
+                padding-bottom: 15%;
+                font-size: 120%;
+            }
+
+            .topnav{
+                width:100%;
+                height:8%;
+                position:relative;
+                background-color:none;
+                float:left;
+            }
+        
+            .topnav ul li{
+                list-style-type: none;
+                float: left;
+                padding: 10;
+                font-size: 25;
+            }
+            .topnav a{
+                display: block;
+                text-decoration: none;
+                color: black;
+                color:white;
+            }
+            .topnav a:hover{
+                text-decoration-line:underline;
+            }
+            .brief{
+                text-decoration: none;
+                width:35%;
+                padding-left: 20;
+                padding-top: 20;
+            }
+            .brief p{
+                font-size: 25;
+                text-align: center;
+                animation: fadein 2s;
+            }
+            .brief button{
+                margin-left: 100;
+                text-align: center;
+                padding:10;
+                font-size: 30;
+                border-radius: 12px;
+                background-color: black;
+                transition-duration: 0.4s;
+                color: white;
+                border: none;
+                font-family: 'adlanta-dark';
+            }
+            .brief button:hover{
+                background-color: #4CAF50;
+                transform: scale(1.2);
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .brief h1{
+                text-align: center;
+                /*text-decoration:underline;*/
+                margin-top: 100;
+                
+            }
+            .header,.topnav{
+                /*background-color: #424242;
+                background-image: url("cover1.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-blend-mode:multiply;
+                color:white;*/
+                color:white;
+            }
+            .footer{
+                width:100%;
+                min-height: 30%;
+                padding-top: 50px;
+                text-align: center;
+                color: white;
+            }
+            .footer hr{
+                width: 20%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="/mnt/868E18008E17E807/studio-code/website/html/html.html">HTML</a></li>
+                <li><a href="/mnt/868E18008E17E807/studio-code/website/css/css.html">CSS</a></li>
+                <li><a href="/mnt/868E18008E17E807/studio-code/website/js/javascript.html">JAVASCRIPT</a></li>
+                <li><a href="error.html">EXTRAS</a></li>
+                <li><a href="error.html">ABOUT US</a></li>
+            </ul>
+            <ul>
+                <li style="float:right"><a href="error.html">SIGN IN</a></li>
+                <li style="float:right"><a href="error.html">REGISTER</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <h1>HTMLJugaad.com</h1>
+            <h4>Learn Web Designing online for free <br>Build your own website today</h4>
+        </div>
+        <div class="html">
+           <div class="brief">
+            <h1>Hyper Text Markup Language</h1>
+            <p>
+                HTML is used to give contents to your webpage.
+                Your webpage could include things like paragraphs, headings, links, images etc.
+            </p>
+            <button onclick="location.href='/mnt/868E18008E17E807/studio-code/website/html/html.html'">Click here to learn</button>
+           </div>
+        </div>
+        <div class="css">
+            <div class="brief">
+            <h1>Cascading Style Sheets</h1>
+            <p>
+                CSS is used to Style your webpages. You could choose how your webpage will look.
+                You could background color, text style, size etc.
+            </p>
+            <button onclick="location.href='/mnt/868E18008E17E807/studio-code/website/css/css.html'">Click here to learn</button>
+           </div>
+        </div>
+        <div class="js">
+        <div class="brief">
+            <h1>JavaScript</h1>
+            <p>
+                JavaScript is used to define the behaviour of your webpage.
+            </p>
+            <button onclick="location.href='/mnt/868E18008E17E807/studio-code/website/js/javascript.html'">Click here to learn</button>
+           </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                This website is designed by Lalit Singh Silwal and Shazan Rizvi of BCA(M) IV-B. <br><br>
+                All rights reserved
+            </p>
+            <hr>
+        </div>
+    </body>
+</html>

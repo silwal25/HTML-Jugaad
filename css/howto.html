@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stylecss.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <header>
+                <h1> <a href="website.html">HTMLJUGAAD</a><span style="color:green">.com</span></h1>
+            </header>
+        </div>
+        <div class = "topnav" id="topnav">
+                <ul style="list-style-type: none">
+                    <li style="float:left;" class="active"><a href="/mnt/868E18008E17E807/studio-code/website/home.html">HOME</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/html/html.html">HTML</a></li>
+                    <li style="float:left"><a href="css.html">CSS</a></li>
+                    <li style="float:left"><a href="/mnt/868E18008E17E807/studio-code/website/js/javascript.html">JAVA SCRIPT</a></li>
+                    <li style="float:left"><a href="extra.html">EXTRAS</a></li>
+                    <li style="float:left"><a href="aboutus.html">ABOUT US</a></li>
+                    <li style="float:right"><a href="signin.html">Sign In</a></li>
+                    <li style="float:right"><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+
+        <div class = "sidenav">
+            <ul>
+                <li><a href="css.html">CSS Home</a></li>
+                <li><a href="introduction.html">CSS Introduction</a></li>
+                <li><a href="syntax.html">CSS Syntax</a></li>
+                <li><a href="howto.html" class="active">CSS How To</a></li>
+                <li><a href="error.html">CSS Colors</a></li>
+                <li><a href="error.html">CSS Backgrounds</a></li>
+                <li><a href="error.html">CSS Borders</a></li>
+                <li><a href="error.html">CSS Margins</a></li>
+                <li><a href="error.html">CSS Padding</a></li>
+                <li><a href="error.html">CSS Height/Width</a></li>
+                <li><a href="error.html">CSS Box Model</a></li>
+                <li><a href="error.html">CSS Outline</a></li>
+                <li><a href="error.html">CSS Text</a></li>
+                <li><a href="error.html">CSS Fonts</a></li>
+                <li><a href="error.html">CSS Icons</a></li>
+                <li><a href="error.html">CSS Links</a></li>
+                <li><a href="error.html">CSS Lists</a></li>
+                <li><a href="error.html">CSS Tables</a></li>
+                <li><a href="error.html">CSS Display</a></li>
+                <li><a href="error.html">CSS Max-Width</a></li>
+                <li><a href="error.html">CSS Position</a></li>
+                <li><a href="error.html">CSS Overflow</a></li>
+                <li><a href="error.html">CSS Float</a></li>
+                <li><a href="error.html">CSS Inline Block</a></li>
+                <li><a href="error.html">CSS Align</a></li>
+                <li><a href="error.html">CSS Combinators</a></li>
+                <li><a href="error.html">CSS Pseudo-Class</a></li>
+                <li><a href="error.html">CSS Pseudo-Elements</a></li>
+                <li><a href="error.html">CSS Opacity</a></li>
+                <li><a href="error.html">CSS Navigation Bar</a></li>
+                <li><a href="error.html">CSS Dropdown</a></li>
+                <li><a href="error.html">CSS Image Gallery</a></li>
+                <li><a href="error.html">CSS Image Sprites</a></li>
+                <li><a href="error.html">CSS Attr Selectors</a></li>
+                <li><a href="error.html">CSS Forms</a></li>
+                <li><a href="error.html">CSS Counters</a></li>
+                <li><a href="error.html">CSS Website Layout</a></li>
+                <li><a href="error.html">CSS Unit</a></li>
+                <li><a href="error.html">CSS Specificity</a></li>
+            </ul>
+            
+        </div>
+
+        <div class = "maincontent">
+            <h1>CSS How To</h1>
+            <hr>
+            <p>
+                When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. <br><br><br>
+                <h2>Three Ways to Insert CSS</h2>
+                There are three ways of inserting a style sheet: <br><br>
+                <div class="container">
+                    <ul>
+                        <li>Internal Style Sheet</li>
+                        <li>External Style</li>
+                        <li>Inline Style</li>
+                    </ul>
+                </div>
+            </p>
+            <hr>
+            <p>
+            <h2>External Style Sheet</h2>
+            With an external style sheet, you can change the look of an entire website by changing just one file! <br>
+            Each page must include a reference to the external style sheet file inside the &lt;link&gt; element. The &lt;link&gt; element goes inside the &lt;head&gt; section: <br>
+            <div class="example">
+                    <h3>Example</h3>
+                    <div class="innerex">
+                            &lt;head&gt; <br>
+                                    &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                            &lt;/head&gt;<br>
+                    </div>
+                </div>
+                    An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension. <br><br>
+                    Here is how the "mystyle.css" looks:<br><br>
+                    <div class="container">
+                            body { <br>
+                                background-color: lightblue;<br>
+                              }<br>
+                              <br>
+                              h1 {<br>
+                                color: navy;<br>
+                                margin-left: 20px;<br>
+                              }<br>
+                    </div>
+
+                    <div class="container">
+                            Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;
+                    </div>
+            </p>
+            <hr>
+            <p>
+                    <h2>Internal Style Sheet</h2>
+                    An internal style sheet may be used if one single page has a unique style. <br><br>
+                    Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:
+                    <div class="example">
+                            <h3>Example</h3>
+                            <div class="innerex">
+                                &lt;head&gt;
+                                &lt;style&gt;
+                                    body {
+                                    background-color: linen;
+                                    }
+            
+                                    h1 {
+                                    color: maroon;
+                                    margin-left: 40px;
+                                    } 
+                                &lt;/style&gt;
+                                &lt;/head&gt;
+                            </div>
+                    </div>
+                </p>
+                <hr>
+                <p>
+                    <h2>Inline Style</h2>
+                    An inline style may be used to apply a unique style for a single element. <br><br>
+                    To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.<br><br>
+                    The example below shows how to change the color and the left margin of a &lt;h1&gt; element:<br><br>
+                    <div class="example">
+                            <h3>Example</h3>
+                            <div class="innerex">
+                                    &lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;
+                            </div>
+                    </div>
+                    <div class="container">
+                            &lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;
+                    </div>
+    
+                </p>
+                <hr>
+                <p>
+                    <h2>Multiple Style Sheet</h2>
+                    If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. <br><br>
+                    <h3>Example</h3>
+                    Assume that an external style sheet has the following style for the &lt;h1&gt; element:
+                    <div class="container">
+                            h1 { <br>
+                                color: navy;<br>
+                              }
+                    </div>
+                    then, assume that an internal style sheet also has the following style for the &lt;h1&gt; element:
+                    <div class="container">
+                            h1 { <br>
+                                color: orange;    <br>
+                              }
+                    </div>
+                    If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be "orange":
+                    <div class="example">
+                            <h3>Example</h3>
+                            <div class="innerex">
+                                &lt;head&gt;
+                                &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+                                &lt;style&gt;
+                                h1 {
+                                    color: orange;
+                                    }
+                                &lt;/style&gt;
+                                &lt;/head&gt;
+                            </div>
+                    </div>
+                    However, if the internal style is defined before the link to the external style sheet, the &lt;h1&gt; elements will be "navy":
+                            <div class="example">
+                                <h3>Example</h3>
+                                <div class="innerex">
+                                    &lt;h3&gt;Example&lt;/h3&gt;
+                                    &lt;div class="innerex"&gt;
+                                    &lt;head&gt;
+                                    &lt;style&gt;
+                                    h1 {
+                                        color: orange;
+                                    }
+                                    &lt;/style&gt;
+                                    &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+                                    &lt;/head&gt;
+                                </div>
+                            </div>
+                </p>
+                <hr>
+                <p>
+                    <h2>Cascading Order</h2>
+                    What style will be used when there is more than one style specified for an HTML element? <br><br>
+                    All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:<br><br>
+                    <ol>
+                        <li>Inline style (inside an HTML element)</li>
+                        <li>External and internal style sheets (in the head section)</li>
+                        <li>Browser default</li>
+                    </ol>
+                    So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+    
+                </p>
+                </div>
+                
+
+        <div class = "footer">
+
+        </div>
+    </body>
+</html>
